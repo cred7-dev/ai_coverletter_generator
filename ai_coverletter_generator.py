@@ -1,6 +1,7 @@
 import streamlit as st
 import google.genai as genai
 
+google_api_key = st.secrets["google"]["api_key"]
 c = genai.Client(api_key=google_api_key)
 
 st.title("AI Cover Letter Generator")
